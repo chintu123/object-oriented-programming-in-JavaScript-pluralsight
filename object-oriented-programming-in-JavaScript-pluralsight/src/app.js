@@ -54,6 +54,8 @@
 // console.log("Get Property: " + drone1.Id + "...." + drone1.Name);
 /* Module 2 - Start */
 
+
+/* Module 3 - Start */
 // class Vehicle {
 //     constructor() {
 //         this.isGPSEnabled = false; // Property inheritance. Child class can override base class property values;
@@ -105,3 +107,4 @@
 // let drone1 = new Drone();
 // console.log(drone1);
 // console.log(drone1.start());
+/* Module 3 - End */
