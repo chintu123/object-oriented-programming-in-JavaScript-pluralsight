@@ -65,41 +65,43 @@ class Vehicle {
     }
 
     static staticMethod() {
+        // This method is also inherited and works in same manner as instance methods
         console.log("static method in baseclass vehicle");
     }
 }
 
-class Drone extends Vehicle {
-    constructor() {
-        super(); // In method inheritance super can be called anytime
-        console.log("childclass drone contructor");
-    }
+// class Drone extends Vehicle {
+//     constructor() {
+//         super(); // In method inheritance super can be called anytime
+//         console.log("childclass drone contructor");
+//     }
 
-    start() {
-        console.log("starting drone");
-    }
+//     start() {
+//         console.log("starting drone");
+//     }
 
-    static staticMethod() {
-        console.log("static method in childclass drone");
-    }
-}
+//     static staticMethod() {
+//         console.log("static method in childclass drone");
+//     }
+// }
 
-class Car extends Vehicle {
-    constructor() { // Sample constructor inheritance
-        super(); // Note: this is mandatory for child class, we can use this super() to pass value to base constructor. Super should be called first in constructor inheritance
-        console.log("childclass car contructor");
-    }
+// class Car extends Vehicle {
+//     constructor() { // Sample constructor inheritance
+//         super(); // Note: this is mandatory for child class, we can use this super() to pass value to base constructor. Super should be called first in constructor inheritance
+//         console.log("childclass car contructor");
+//     }
 
-    start() {
-        console.log("starting car");
-        super.start();
-    }
+//     start() {
+//         console.log("starting car");
+//         super.start();
+//     }
 
-    static staticMethod() {
-        console.log("static method in childclass car");
-    }
-}
+//     static staticMethod() {
+//         // super() method does not working static method
+//         console.log("static method in childclass car");
+//     }
+// }
 
-let drone1 = new Drone();
-console.log(drone1);
-console.log(drone1.start());
+// let drone1 = new Drone();
+// console.log(drone1);
+// console.log(drone1.start());
