@@ -108,3 +108,29 @@
 // console.log(drone1);
 // console.log(drone1.start());
 /* Module 3 - End */
+
+
+/* Module 4 - Start */
+
+import {Car} from "./Classes/Car.js";
+import {Drone} from "./Classes/Drone.js";
+import {fleet} from "./fleet-data.js";
+import {FleetDataService} from "./Services/fleet-data-service.js";
+
+let dataService = new FleetDataService();
+dataService.loadData(fleet);
+// console.log(fleet);
+// console.log("Cars: " + dataService.Cars.length);
+// console.log("Drones: " + dataService.Drones.length);
+
+// for (let car of dataService.Cars) {
+//     console.log("Miles:- " + car.miles);
+// }
+
+// for (let drone of dataService.Drones) {
+//     console.log("AirTimeHours:- " + drone.AirTimeHours);
+// }
+
+for (let error of dataService.Errors) {
+    console.log("Error:- " + error.Message);
+}
